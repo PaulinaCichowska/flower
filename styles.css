@@ -1,6 +1,117 @@
+:root {
+  --brand-color: #968c83;
+  --brand-color2: #d6d2c4;
+  --brand-color3: #fff5ea;
+  --brand-color4: #f7dad9;
+  --logo-color: #fe6b94;
+}
 body {
   font-family: "Titillium Web", sans-serif;
 }
 .search {
   border-radius: 99px;
+  width: 400px;
+}
+.search-after::after {
+  content: url(./images/svg/search.svg);
+  vertical-align: middle;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+.delivery-alert {
+  height: 20px;
+  background-image: radial-gradient(
+    circle,
+    rgba(247, 218, 217, 1) 15%,
+    rgb(212, 130, 154) 100%
+  );
+  margin: 0;
+}
+div.delivery-alert > p::after {
+  content: url(./images/svg/courier.svg);
+  vertical-align: middle;
+}
+div.delivery-alert > p {
+  margin: 0;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+.header-start {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: flex-start;
+  padding-bottom: 25px;
+}
+.list-style {
+  list-style-type: none;
+}
+.nav {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.td-none {
+  text-decoration: none;
+}
+.background-nav {
+  background-color: var(--brand-color4);
+  height: 70px;
+}
+.nav-item {
+  color: black;
+  font-size: 18px;
+}
+.pointer:hover {
+  cursor: pointer;
+}
+h1 {
+  color: white;
+  font-family: "Great Vibes", cursive;
+  font-size: 60px;
+  margin: 0;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.main-background {
+  background-color: var(--brand-color3);
+  background-image: url(./images/background1.jpg);
+  height: 600px;
+  background-size: cover;
+}
+.background-section {
+  display: flex;
+  flex-direction: column;
+}
+section.main-background > div > p {
+  color: #fac6d8;
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.button {
+  display: block;
+  height: 80px;
+  width: 200px;
+  background-color: #fe6b94;
+  cursor: pointer;
+  border: none;
+  border-radius: 200px;
+  margin: auto;
+  font-weight: 600;
+  color: white;
+  font-size: 25px;
 }
