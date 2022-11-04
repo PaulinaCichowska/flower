@@ -157,10 +157,14 @@ ul.product-list > li > p {
   text-align: center;
 }
 ul.product-list > li {
-  background-color: var(--brand-color2);
-  border-radius: 3px;
+  background-color: rgba(247, 218, 217, 1);
+  border-radius: 20px;
   border: var(--brand-color2) solid 1px;
   box-shadow: 0px 7px 6px -1px rgba(45, 45, 45, 1);
+}
+.border-r {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 ul.product-list > li > p:nth-child(3) {
@@ -168,10 +172,10 @@ ul.product-list > li > p:nth-child(3) {
   color: rgb(221, 42, 42);
 }
 main {
-  background-color: var(--brand-color3);
+  background-color: rgb(248, 239, 239);
 }
 .footer-main {
-  background-color: #968c83;
+  background-color: var(--brand-color4);
   margin: 0;
   padding: 0;
 }
@@ -213,4 +217,9 @@ ul.footer-flex > li > a {
   color: white;
   font-size: 18px;
   font-weight: 400;
+}
+ul.product-list > li:hover {
+  transition: all 0.2;
+  transform: scale(1.02);
+  box-shadow: 0px 5px 4px -1px rgba(45, 45, 45, 1);
 }
